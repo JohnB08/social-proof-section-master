@@ -1,0 +1,95 @@
+:root {
+  --text: hsl(300, 43%, 22%);
+  --buyer-text: hsl(333, 80%, 67%);
+  --top-p-text: hsl(303, 10%, 53%);
+  --rating-bg: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  width: 100vw;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  gap: 1em;
+}
+.head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em;
+}
+.head h1 {
+  width: 90%;
+  color: var(--text);
+}
+.head p {
+  color: var(--top-p-text);
+  line-height: 1.25em;
+  margin-top: 1em;
+}
+.ratingwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5em 0 1.5em 0;
+}
+.ratingcontainer {
+  background: var(--rating-bg);
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0 0.5em 0;
+  line-height: 2.5em;
+  border-radius: 0.5em;
+  color: var(--text);
+  font-size: 14px;
+}
+.ratingwrapper .imagewrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewwrapper {
+  background: var(--text);
+  color: white;
+  padding: 5% 10% 10%;
+  line-height: 1.5em;
+  border-radius: 0.5em;
+}
+.customerid {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 1.5em 0;
+  gap: 1.5em;
+  line-height: 1.2em;
+}
+.customerid span {
+  color: var(--buyer-text);
+  display: block;
+}
+.customerid h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.customerid img {
+  width: 2.5em;
+  border-radius: 50%;
+}

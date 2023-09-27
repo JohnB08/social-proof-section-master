@@ -120,47 +120,44 @@ main {
   grid-area: 3/3/6/4;
 }
 @media only screen and (max-width: 600px) {
-  body {
-    padding: 20% 5%;
+  body,
+  main,
+  .ratingwrapper,
+  .reviewwrapper {
     display: flex;
+  }
+  main,
+  .ratingwrapper,
+  .ratingcontainer,
+  .reviewwrapper {
+    flex-direction: column;
+  }
+  body {
+    padding: 20% 10%;
     justify-content: center;
     align-items: center;
     height: auto;
     background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat,
       url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
   }
+  main,
+  .reviewwrapper {
+    gap: 2em;
+  }
   main {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
   }
   .head {
-    width: 100%;
     padding: 0;
-    grid-area: 2/2/3/3;
     text-align: center;
   }
-  .head h1 {
-    width: 100%;
-  }
+  .head h1,
   .ratingwrapper {
-    grid-area: 3/2/4/3;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    margin-bottom: 1em;
   }
   .ratingcontainer {
-    flex-direction: column;
     justify-content: center;
     gap: 1em;
-  }
-  .reviewwrapper {
-    grid-area: 4/2/5/3;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
   }
   .reviewcontainer {
     height: 30vh;
